@@ -1,4 +1,14 @@
 /*global $, jQuery*/
+
+/*
+
+    (Amount)*(1.(interest))^(# of Compounds)
+     
+    So the $1, 20% interest, compound every 10 minutes for 6 months would be...
+     
+    1*1.2^25,920
+
+ */
 jQuery(document).ready(function($) {
     var quantity, errmsg, submit, final_quantity, compounds, original_loan_date;
 
