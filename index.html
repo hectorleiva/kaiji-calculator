@@ -4,14 +4,37 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css"></link>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"></link>
 	<script src="custom.js"></script>
 	<title>Kaiji Calculator</title>
 </head>
 <body>
-	Place Your Bets
-	<input type="text" name="quantity" id="quantity" /></input>
-	<span id="errmsg"></span>
-	<br />
-	<input type="submit" id="submit" name="submit" /></input>
+	<div id="container">
+		<div id="loan_questionaire">
+			<div class="loan_question">
+				<div class="loan_question_title">Enter the Original Date of Your Loan:</div>
+				<input type="text" id="original_loan_date" />
+			</div>
+			<div class="loan_question">
+				<div class="loan_question_title">Enter the Amount the Original Loan was for:</div>
+				<input type="text" name="quantity" class="money" id="quantity" placeholder="Enter amount here" /></input>
+				<span id="errmsg"></span>
+			</div>
+			<button type="button" id="submit" class="btn btn-danger btn-lg btn-block">Check Loan</button>
+		</div>
+		<div id="kaiji_reaction">
+			<img class="kaiji_img okay" src="img/kaiji-okay.jpg"/>
+			<img class="kaiji_img fuuu" src="img/kaiji-fuuu.png"/>
+		</div>
+		<div id="due">
+			<div id="owe_message">YOU OWE</div>
+			<div id="amount_due"></div>
+		</div>
+	</div>
+<footer>
+	<div id="credits">Kaiji (賭博黙示録カイジ) is a creation of Nobuyuki Fukumoto. This is merely a fan creation.<br />Site by <a href="http://hectorleiva.com">Hector Leiva</a></div>
+</footer>
 </body>
 </html>
