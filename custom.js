@@ -10,10 +10,12 @@
 
  */
 jQuery(document).ready(function($) {
-  var body, quantity, errmsg, submit, amount, loan_question_title, loan_questionaire, final_quantity, compounds, original_loan_date, todays_date, day_diff, n, money, kaiji_reaction, credits;
+  var body, quantity, errmsg, submit, amount, loan_question_title, loan_questionaire, final_quantity, compounds, original_loan_date, todays_date, day_diff, n, money, kaiji_reaction, credits, audio_element, audio_controller;
 
   body = $('body');
   quantity = $('#quantity');
+  audio = $('audio');
+  audio_controller = $('#audio_controller');
   errmsg = $('#errmsg');
   submit = $('#submit');
   loan_question_title = $('.loan_question_title');
@@ -109,8 +111,10 @@ jQuery(document).ready(function($) {
       credits
         .addClass('white')
         .addClass('black_outline');
+
+      audio[0].play();
+
       kaiji_output.show();
     });
   });
-
 });

@@ -17,7 +17,7 @@ body {
 #container {
 	float: left;
 	width: 98%;
-	margin: 2%;
+	margin: 2% 2% 10% 2%;
 }
 
 #ui-datepicker-div {
@@ -87,11 +87,56 @@ input#original_load_date, input#quantity {
 			display: none;
 		}
 
+footer {
+	float: left;
+	width: 100%;
+}
+
+#audio_controller {
+	opacity: 0;
+	position: relative;
+	width: 60%;
+	left: 40%;
+}
+
 #credits {
 	float: left;
-	position: fixed;
+	position: relative;
 	bottom: 2%;
 	width: 100%;
 	text-align: center;
 	font-size: 0.8em;
+}
+
+@media (max-width: 640px) {
+	#loan_questionaire {
+		width: 96%;
+		font-size: 2.7em;
+	}
+	#submit {
+		font-size: 0.8em;
+	}
+	#kaiji_reaction {
+		width: 95%;
+	}
+	#credits {
+		width: 95%;
+		margin: 5% 0;
+		font-size: 1.3em;
+	}
+	.loan_question_title {
+		font-size: 0.7em;
+	}
+	input {
+		width: 100%;
+	}
+	input.money {
+		width: 90%;
+		font-size: 0.7em;
+	}
+	#due {
+		width: 100%;
+		font-size: 3em;
+	}
+
 }
